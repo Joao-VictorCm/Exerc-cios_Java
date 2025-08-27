@@ -34,28 +34,22 @@ public class Estruturas_Sequencias {
 		 * por m² é R$ 100,00. Dados de entrada: raio e altura da lata (em metros).
 		 * Arealata=Areabase π *r2∗2 +Arealado  2 * *r*h π  considere o preço do
 		 * alumínio por m² como sendo uma constante.
-		 */
-		Scanner sc = new Scanner(System.in);
-		int raio;
-		int altura;
-		System.out.println("Raio:");
-		raio = sc.nextInt();
-		System.out.println("Altura");
-		altura = sc.nextInt();
-
-		double raioElevadoaoQuadrado = Math.pow(raio, 2.0);
-		double areaBase = Math.PI * raioElevadoaoQuadrado * 2.0;
-		double areaLateral = 2.0 * Math.PI * 6.0 * altura;
-
-		double result = (areaBase + areaLateral) * 100;
-
-		System.out.println("Valor do custo é " + result);
-
-		sc.close();
-		
-		
-		
-		/*
+		 * 
+		 * Scanner sc = new Scanner(System.in); int raio; int altura;
+		 * System.out.println("Raio:"); raio = sc.nextInt();
+		 * System.out.println("Altura"); altura = sc.nextInt();
+		 * 
+		 * double raioElevadoaoQuadrado = Math.pow(raio, 2.0); double areaBase = Math.PI
+		 * * raioElevadoaoQuadrado * 2.0; double areaLateral = 2.0 * Math.PI * 6.0 *
+		 * altura;
+		 * 
+		 * double result = (areaBase + areaLateral) * 100;
+		 * 
+		 * System.out.println("Valor do custo é " + result);
+		 * 
+		 * sc.close();
+		 * 
+		 * 
 		 * -----------------------------------------------------------------------------
 		 * 
 		 * 3. Teorema de Pitágoras: H² = L1² + L2² . Tem uma infinidade de números com
@@ -64,6 +58,22 @@ public class Estruturas_Sequencias {
 		 * valores dos lados e da Hipotenusa do triângulo gerados combinando M e N.
 		 * L1=M2−N 2 ,L 2=2 *M*N, Hipotenusa = M² + N²
 		 */
+
+		Scanner ex03 = new Scanner(System.in);
+		int M;
+		int N;
+
+		M = ex03.nextInt();
+		N = ex03.nextInt();
+
+		double L1 = Math.pow(M, 2.0) - Math.pow(N, 2.0);
+		double L2 = 2 * M * N;
+		double hipotenusa = Math.pow(M, 2.0) + Math.pow(N, 2.0);
+		System.out.println("L1 " + L1);
+		System.out.println("L2 " + L2);
+		System.out.println("Hipotenusa " + hipotenusa);
+
+		ex03.close();
 
 	}
 
