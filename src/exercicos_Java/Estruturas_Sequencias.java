@@ -57,23 +57,56 @@ public class Estruturas_Sequencias {
 		 * desenvolver um algoritmo para entrar com dois números positivos e fornecer os
 		 * valores dos lados e da Hipotenusa do triângulo gerados combinando M e N.
 		 * L1=M2−N 2 ,L 2=2 *M*N, Hipotenusa = M² + N²
+		 * 
+		 * 
+		 * Scanner ex03 = new Scanner(System.in); int M; int N;
+		 * 
+		 * M = ex03.nextInt(); N = ex03.nextInt();
+		 * 
+		 * double L1 = Math.pow(M, 2.0) - Math.pow(N, 2.0); double L2 = 2 * M * N;
+		 * double hipotenusa = Math.pow(M, 2.0) + Math.pow(N, 2.0);
+		 * System.out.println("L1 " + L1); System.out.println("L2 " + L2);
+		 * System.out.println("Hipotenusa " + hipotenusa);
+		 * 
+		 * ex03.close();
+		 * 
+		 * -----------------------------------------------------------------------------
+		 * 
+		 * 4. Muitos países estão passando a utilizar o sistema métrico. Fazer um
+		 * algoritmo para executar as seguintes conversões: • Ler uma temperatura em e
+		 * imprimir o equivalente em Celsius (F = 9/5 * C + 32) (C = (F – 32)/1,8),
+		 * considerando C e F os valores Celsius e Fahrenheit, respectivamente. • Ler
+		 * uma quantidade de chuva dada em polegadas e imprimir o equivalFahrenheitente
+		 * em milímetros (1 polegada = 25,4 mm).
+		 * 
+		 * 
+		 * Scanner ex04 = new Scanner(System.in);
+		 * 
+		 * int Fahrenheit; int polegadas; System.out.
+		 * println("Digite a temperatura em Fahrenheit para converter em Celsius");
+		 * Fahrenheit = ex04.nextInt(); System.out.
+		 * println("Digite a quantidade de chuvas a ser convertida de polegadas para mm"
+		 * ); polegadas = ex04.nextInt(); double C = (Fahrenheit - 32) / 1.8; double D =
+		 * polegadas * 25.4; System.out.println(Fahrenheit + " Fahrenheit são " +C +
+		 * "° celsis"); System.out.println("Quantidade de chuva em mm é " + D);
+		 * 
+		 * -----------------------------------------------------------------------------
+		 * 
+		 * Fazer um programa para ler os valores dos coeficientes A, B e C de uma
+		 * equação quadrática e calcular e imprimir o valor do discriminante (delta).
+		 * ∆= B² – 4 * A * C
+		 * A = 5
+		 * B = 12
+		 * C = 4
 		 */
-
-		Scanner ex03 = new Scanner(System.in);
-		int M;
-		int N;
-
-		M = ex03.nextInt();
-		N = ex03.nextInt();
-
-		double L1 = Math.pow(M, 2.0) - Math.pow(N, 2.0);
-		double L2 = 2 * M * N;
-		double hipotenusa = Math.pow(M, 2.0) + Math.pow(N, 2.0);
-		System.out.println("L1 " + L1);
-		System.out.println("L2 " + L2);
-		System.out.println("Hipotenusa " + hipotenusa);
-
-		ex03.close();
+		
+		int A = 5;
+		int B = 12;
+		int C = 4;
+		
+		double result = Math.pow(B, 2.0) - 4 * A * C;
+		
+		System.out.print(result);
 
 	}
 
