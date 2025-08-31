@@ -1,6 +1,7 @@
 package Estrutura_Condicional;
 
 import java.text.CollationElementIterator;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Scanner;
 
@@ -80,13 +81,10 @@ public class Exercicios_2 {
 		 * 8) Escreva um algoritmo que leia três valores inteiros e diferentes e
 		 * mostre-os em ordem decrescente.
 		 */
+		Integer[] numeros = { 25, 03, 66, 10, 6 };
 		
-		int a = 1;
-		int b = 6;
-		int c = 25;
-	
-		
-		
+		Arrays.sort(numeros, (a,b) -> b -a);
+		System.out.println(Arrays.toString(numeros));
 
 	}
 
