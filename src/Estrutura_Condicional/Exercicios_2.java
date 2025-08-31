@@ -26,27 +26,35 @@ public class Exercicios_2 {
 		 * 2) Faça um algoritmo que leia o nome, o sexo e o estado civil de uma pessoa.
 		 * Caso sexo seja “F” e estado civil seja “CASADA”, solicitar o tempo de casada
 		 * (anos).
+		 * 
+		 * Scanner sc = new Scanner(System.in);
+		 * 
+		 * String sexo; String estadoCivil; int anos;
+		 * System.out.print("Qual seu sexo, M ou F?"); sexo = sc.nextLine();
+		 * System.out.print("Estado civil?"); estadoCivil = sc.nextLine();
+		 * 
+		 * if (sexo.equalsIgnoreCase("F") && estadoCivil.equalsIgnoreCase("Casada")) {
+		 * System.out.print("casada a quantos anos?"); anos = sc.nextInt();
+		 * System.out.println(anos);
+		 * 
+		 * } else { }
+		 * 
+		 * sc.close();
+		 * 
+		 * 
+		 * -----------------------------------------------------------------------------
+		 * 3) Faça um algoritmo para receber um número qualquer e informar na tela se é
+		 * par ou ímpar.
 		 */
-		Scanner sc = new Scanner(System.in);
 
-		String sexo;
-		String estadoCivil;
-		int anos;
-		System.out.print("Qual seu sexo, M ou F?");
-		sexo = sc.nextLine();
-		System.out.print("Estado civil?");
-		estadoCivil = sc.nextLine();
-	
+		double numero = 14;
 
-		if (sexo.equalsIgnoreCase("F") && estadoCivil.equalsIgnoreCase("Casada")) {
-			System.out.print("casada a quantos anos?");
-			anos = sc.nextInt();
-			System.out.println(anos);
-
-		} else {
+		if (numero %  2 == 0) {
+			System.out.println("Numero par");
+		}else {
+			System.out.println("Numero impar");
 		}
 
-		sc.close();
 	}
 
 }
