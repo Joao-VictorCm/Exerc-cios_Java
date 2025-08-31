@@ -1,5 +1,7 @@
 package Estrutura_Condicional;
 
+import java.text.CollationElementIterator;
+import java.util.Collection;
 import java.util.Scanner;
 
 public class Exercicios_2 {
@@ -61,18 +63,28 @@ public class Exercicios_2 {
 		 * de qualquer um dos cálculos deve-se atribuir o resultado para uma variável L
 		 * e mostrar seu conteúdo na tela.
 		 */
-		
+
 		int J = 5;
 		int K = 2;
 		int L;
-		
-		if(J == K) {
+
+		if (J == K) {
 			L = J + K;
-			System.out.println("Numeros inguais " +L);
-		}else {
-			L = J*K;
-			System.out.println("numeros diferentes " +L);
+			System.out.println("Numeros inguais " + L);
+		} else {
+			L = J * K;
+			System.out.println("numeros diferentes " + L);
 		}
+		/*
+		 * -----------------------------------------------------------------------------
+		 * 8) Escreva um algoritmo que leia três valores inteiros e diferentes e
+		 * mostre-os em ordem decrescente.
+		 */
+		
+		int a = 1;
+		int b = 6;
+		int c = 25;
+	
 		
 		
 
