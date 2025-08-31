@@ -49,11 +49,32 @@ public class Exercicios_2 {
 
 		double numero = 14;
 
-		if (numero %  2 == 0) {
+		if (numero % 2 == 0) {
 			System.out.println("Numero par");
-		}else {
+		} else {
 			System.out.println("Numero impar");
 		}
+		/*
+		 * -----------------------------------------------------------------------------
+		 * 4) Faça um algoritmo que leia dois valores inteiros J e K se os valores forem
+		 * iguais deverá se somar os dois, caso contrário multiplique J por K. Ao final
+		 * de qualquer um dos cálculos deve-se atribuir o resultado para uma variável L
+		 * e mostrar seu conteúdo na tela.
+		 */
+		
+		int J = 5;
+		int K = 2;
+		int L;
+		
+		if(J == K) {
+			L = J + K;
+			System.out.println("Numeros inguais " +L);
+		}else {
+			L = J*K;
+			System.out.println("numeros diferentes " +L);
+		}
+		
+		
 
 	}
 
