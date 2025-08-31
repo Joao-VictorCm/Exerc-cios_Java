@@ -102,7 +102,7 @@ public class Estruturas_Sequencias {
 		
 		int A = 5;
 		int B = 12;
-		int C = 4;
+		int C = 45;
 		
 		double result = Math.pow(B, 2.0) - 4 * A * C;
 		
