@@ -63,7 +63,7 @@ public class Exercicios {
 				System.out.println("Q1");
 			}else if(X < 0 && Y > 0) {
 				System.out.println("Q2");
-			}else if()
+			}else if(X > 0)
 		}
 
 		sc.close();
