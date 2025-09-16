@@ -38,56 +38,86 @@ public class Exercicios {
 		 * 
 		 * Problema "senha_fixa
 		 * 
-		 * System.out.println("Digite sua senha:"); 
-		 *int senha = sc.nextInt();
+		 * System.out.println("Digite sua senha:"); int senha = sc.nextInt();
 		 * 
-		 * while (senha != 2312) { 
-		 * System.out.println("Senha invalida! Tente novamente:"+ senha);
-		 * senha = sc.nextInt();
+		 * while (senha != 2312) {
+		 * System.out.println("Senha invalida! Tente novamente:"+ senha); senha =
+		 * sc.nextInt();
 		 * 
-		 * } 
-		 * System.out.println("Acesso permitido!");
+		 * } System.out.println("Acesso permitido!");
 		 * 
 		 * -----------------------------------------------------------------------------
 		 * 
 		 * Problema "quadrante"
 		 * 
-		 * Q1 → X > 0 e Y > 0
-		 * Q2 → X < 0 e Y > 0
-		 * Q3 → X < 0 e Y < 0
-		 * Q4 → X > 0 e Y < 0
+		 * Q1 → X > 0 e Y > 0 Q2 → X < 0 e Y > 0 Q3 → X < 0 e Y < 0 Q4 → X > 0 e Y < 0
+		 * 
+		 * System.out.println("Digite os valores das coordenadas X e Y:"); int X =
+		 * sc.nextInt(); int Y = sc.nextInt();
+		 * 
+		 * while (X != 0 && Y != 0 ) { if(X > 0 && Y > 0) {
+		 * System.out.println("QUADRANTE Q1");
+		 * System.out.println("Digite os valores das coordenadas X e Y:"); X =
+		 * sc.nextInt(); Y = sc.nextInt(); }else if(X < 0 && Y > 0) {
+		 * System.out.println("QUADRANTE Q2");
+		 * System.out.println("Digite os valores das coordenadas X e Y:"); X =
+		 * sc.nextInt(); Y = sc.nextInt(); }else if(X < 0 && Y <0) {
+		 * System.out.println("QUADRANTE Q3");
+		 * System.out.println("Digite os valores das coordenadas X e Y:"); X =
+		 * sc.nextInt(); Y = sc.nextInt(); }else if(X > 0 && Y < 0) {
+		 * System.out.println("QUADRANTE Q4");
+		 * System.out.println("Digite os valores das coordenadas X e Y:"); X =
+		 * sc.nextInt(); Y = sc.nextInt(); } }
+		 * 
+		 * ------------------------------------------------------------------------
+		 * 
+		 * Problema "validacao_de_nota"
+		 * 
+		 * 
+		 * System.out.print("Digite a primeira nota:"); double nota1 = sc.nextDouble();
+		 * 
+		 * while(nota1 < 0 || nota1 > 10) {
+		 * System.out.println("Valor invalido! Tente novamente:"); nota1 =
+		 * sc.nextDouble(); }
+		 * 
+		 * System.out.print("Digite a segunda nota:"); double nota2 = sc.nextDouble();
+		 * while(nota2 < 0 || nota2 > 10) {
+		 * System.out.println("Valor invalido! Tente novamente:"); nota2 =
+		 * sc.nextDouble(); }
+		 * 
+		 * double mediaNota = (nota1 + nota2) / 2; System.out.println("MEDIA: "
+		 * +mediaNota);
+		 * 
+		 * ------------------------------------------------------------------------
+		 * 
+		 * Problema "combustivel"
 		 */
 
-		System.out.println("Digite os valores das coordenadas X e Y:");
-		int X = sc.nextInt();
-		int Y = sc.nextInt();
+		int alcool = 0;
+		int gasolina = 0;
+		int diesel = 0;
+		int codigo = 0;
 
-		while (X != 0 && Y != 0 ) {
-			if(X > 0 && Y > 0) {
-				System.out.println("QUADRANTE Q1");
-				System.out.println("Digite os valores das coordenadas X e Y:");
-				X = sc.nextInt();
-				Y = sc.nextInt();
-			}else if(X < 0 && Y > 0) {
-				System.out.println("QUADRANTE Q2");
-				System.out.println("Digite os valores das coordenadas X e Y:");
-				X = sc.nextInt();
-				Y = sc.nextInt();
-			}else if(X < 0 && Y <0) {
-				System.out.println("QUADRANTE Q3");
-				System.out.println("Digite os valores das coordenadas X e Y:");
-				X = sc.nextInt();
-				Y = sc.nextInt();
-			}else if(X > 0 && Y < 0) {
-				System.out.println("QUADRANTE Q4");
-				System.out.println("Digite os valores das coordenadas X e Y:");
-				X = sc.nextInt();
-				Y = sc.nextInt();
+		while (codigo != 4) {
+			System.out.println("Informe um codigo (1, 2, 3) ou 4 para parar:");
+			codigo = sc.nextInt();
+			switch (codigo) {
+			case 1:
+				alcool++;
+				break;
+			case 2:
+				gasolina++;
+				break;
+			case 3:
+				diesel++;
+				break;
 			}
-		}
-		
-		System.out.println("fora");
 
+		}
+		System.out.println("MUITO OBRIGADO");
+		System.out.println("Alcool: " + alcool);
+		System.out.println("Gasolina: "+gasolina);
+		System.out.println("Diesel: "+diesel);
 		sc.close();
 	}
 
