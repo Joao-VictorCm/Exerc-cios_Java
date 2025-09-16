@@ -11,11 +11,11 @@ public class Exercicios {
 
 		Scanner sc = new Scanner(System.in);
 		/*
-		 * int X; int Y; String resp;
+		 * int A; int B; String resp;
 		 * 
-		 * do { System.out.print("Digite dois numeros:"); X = sc.nextInt(); Y =
-		 * sc.nextInt(); if (X != Y) { resp = (X < Y) ? "CRESCENTE" : "DECRESCENTE";
-		 * System.out.println(resp); } } while (X != Y);
+		 * do { System.out.print("Digite dois numeros:"); A = sc.nextInt(); B =
+		 * sc.nextInt(); if (A != B) { resp = (A < B) ? "CRESCENTE" : "DECRESCENTE";
+		 * System.out.println(resp); } } while (A != B);
 		 * -------------------------------------------------------------------------
 		 */
 
@@ -91,33 +91,44 @@ public class Exercicios {
 		 * ------------------------------------------------------------------------
 		 * 
 		 * Problema "combustivel"
+		 * 
+		 * 
+		 * int alcool = 0; int gasolina = 0; int diesel = 0; int codigo = 0;
+		 * 
+		 * while (codigo != 4) {
+		 * System.out.println("Informe um codigo (1, 2, 3) ou 4 para parar:"); codigo =
+		 * sc.nextInt(); switch (codigo) { case 1: alcool++; break; case 2: gasolina++;
+		 * break; case 3: diesel++; break; }
+		 * 
+		 * } System.out.println("MUITO OBRIGADO"); System.out.println("Alcool: " +
+		 * alcool); System.out.println("Gasolina: "+gasolina);
+		 * System.out.println("Diesel: "+diesel);
+		 * 
+		 * ------------------------------------------------------------------------
+		 * 
+		 * Problema "pares_consecutivos"
 		 */
-
-		int alcool = 0;
-		int gasolina = 0;
-		int diesel = 0;
-		int codigo = 0;
-
-		while (codigo != 4) {
-			System.out.println("Informe um codigo (1, 2, 3) ou 4 para parar:");
-			codigo = sc.nextInt();
-			switch (codigo) {
-			case 1:
-				alcool++;
-				break;
-			case 2:
-				gasolina++;
-				break;
-			case 3:
-				diesel++;
-				break;
+	
+	
+		
+		while(true) {
+			System.out.print("Digite um numero inteiro:");
+			int N = sc.nextInt();
+			
+			  if (N == 0) {
+			        System.out.println("Encerrando o programa...");
+			        break; // sai do while imediatamente
+			    }
+			if(N % 2 == 0) {
+				int soma = (N + (N+2) + (N+4) + (N+6) + (N+8));
+				System.out.println("SOMA: " +soma);
+			}else {
+				N++;
+				int soma = (N + (N+2) + (N+4) + (N+6) + (N+8));
+				System.out.println("SOMA: " +soma);
 			}
-
 		}
-		System.out.println("MUITO OBRIGADO");
-		System.out.println("Alcool: " + alcool);
-		System.out.println("Gasolina: "+gasolina);
-		System.out.println("Diesel: "+diesel);
+
 		sc.close();
 	}
 
