@@ -107,28 +107,31 @@ public class Exercicios {
 		 * ------------------------------------------------------------------------
 		 * 
 		 * Problema "pares_consecutivos"
+		 * 
+		 * 
+		 * while(true) { System.out.print("Digite um numero inteiro:"); int N =
+		 * sc.nextInt();
+		 * 
+		 * if (N == 0) { System.out.println("Encerrando o programa..."); break; // sai
+		 * do while imediatamente } if(N % 2 == 0) { int soma = (N + (N+2) + (N+4) +
+		 * (N+6) + (N+8)); System.out.println("SOMA: " +soma); }else { N++; int soma =
+		 * (N + (N+2) + (N+4) + (N+6) + (N+8)); System.out.println("SOMA: " +soma); } }
+		 * 
+		 * -----------------------------------------------------------------------------
+		 * 
+		 * PARTE 2: estrutura for (para)
+		 * Problema "tabuada"
 		 */
-	
-	
 		
-		while(true) {
-			System.out.print("Digite um numero inteiro:");
-			int N = sc.nextInt();
-			
-			  if (N == 0) {
-			        System.out.println("Encerrando o programa...");
-			        break; // sai do while imediatamente
-			    }
-			if(N % 2 == 0) {
-				int soma = (N + (N+2) + (N+4) + (N+6) + (N+8));
-				System.out.println("SOMA: " +soma);
-			}else {
-				N++;
-				int soma = (N + (N+2) + (N+4) + (N+6) + (N+8));
-				System.out.println("SOMA: " +soma);
-			}
+		System.out.print("Deseja a tabuada para qual valor?");
+		int tabuada = sc.nextInt();
+		
+		
+		for(int i = 0; i < 11; i++) {
+			int resultado = tabuada * i;
+			System.out.println(resultado);
 		}
-
+		
 		sc.close();
 	}
 
