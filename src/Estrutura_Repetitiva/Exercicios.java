@@ -119,19 +119,31 @@ public class Exercicios {
 		 * 
 		 * -----------------------------------------------------------------------------
 		 * 
-		 * PARTE 2: estrutura for (para)
-		 * Problema "tabuada"
+		 * PARTE 2: estrutura for (para) Problema "tabuada"
+		 * 
+		 * 
+		 * System.out.print("Deseja a tabuada para qual valor?"); int tabuada =
+		 * sc.nextInt();
+		 * 
+		 * 
+		 * for(int i = 0; i < 11; i++) { int resultado = tabuada * i;
+		 * System.out.println(resultado); }
+		 * 
+		 * -----------------------------------------------------------------------------
+		 * 
+		 * Problema "soma impares"
 		 */
 		
-		System.out.print("Deseja a tabuada para qual valor?");
-		int tabuada = sc.nextInt();
+		int N1 = 2;
+		int N2 = 9;
 		
-		
-		for(int i = 0; i < 11; i++) {
-			int resultado = tabuada * i;
-			System.out.println(resultado);
+		int total = N1 + N2;
+		for(int i = 1; i < total; i++) {
+			if(total % 2 != 0) {
+				System.out.println(total);
+			}
 		}
-		
+
 		sc.close();
 	}
 
