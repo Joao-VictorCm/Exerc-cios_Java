@@ -132,17 +132,25 @@ public class Exercicios {
 		 * -----------------------------------------------------------------------------
 		 * 
 		 * Problema "soma impares"
+		 * 
+		 * int N1 = 6; int N2 = -5;
+		 * 
+		 * int menor, maior;
+		 * 
+		 * if (N1 < N2) { menor = N1; maior = N2; } else { menor = N2; maior = N1; }
+		 * 
+		 * int soma = 0;
+		 * 
+		 * for (int i = menor + 1; i < maior; i++) { if (i % 2 != 0) { soma = soma + i;
+		 * } }
+		 * 
+		 * System.out.println("SOMA DOS ÍMPARES = " + soma);
+		 * 
+		 * 
+		 * -----------------------------------------------------------------------------
+		 * 
+		 * Problema "soma impares"
 		 */
-		
-		int N1 = 2;
-		int N2 = 9;
-		
-		int total = N1 + N2;
-		for(int i = 1; i < total; i++) {
-			if(total % 2 != 0) {
-				System.out.println(total);
-			}
-		}
 
 		sc.close();
 	}
