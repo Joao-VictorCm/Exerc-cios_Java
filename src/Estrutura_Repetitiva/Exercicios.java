@@ -1,5 +1,8 @@
 package Estrutura_Repetitiva;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Exercicios {
@@ -149,8 +152,30 @@ public class Exercicios {
 		 * 
 		 * -----------------------------------------------------------------------------
 		 * 
-		 * Problema "soma impares"
+		 * Problema "dentro_fora" intervalo [10,20]
 		 */
+
+		int n, x, fora, dentro;
+
+		System.out.print("Quantos numeros voce vai digitar? ");
+		n = sc.nextInt();
+
+		fora = 0;
+		dentro = 0;
+
+		for (int i = 0; i < n; i++) {
+			System.out.print("Digite um numero: ");
+			x = sc.nextInt();
+
+			if (x < 10 || x > 20) {
+				fora++;
+			} else {
+				dentro++;
+			}
+		}
+
+		System.out.printf("%d DENTRO\n", dentro);
+		System.out.printf("%d FORA\n", fora);
 
 		sc.close();
 	}
